@@ -1,0 +1,23 @@
+{
+  "name": "fl-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uhyo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/node": "^8.0.6",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "find-up": "^2.1.0",
+    "minimist": "^1.2.0"
+  }
+}
