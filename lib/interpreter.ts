@@ -67,6 +67,7 @@ export class Interpreter{
             }
         });
         proc.stdout.pipe(process.stdout);
+        proc.stderr.pipe(process.stdout);
         this.proc = proc;
     }
 }

@@ -6,6 +6,8 @@ export const status = chalk.cyan;
 
 export const input = chalk.yellow;
 
+export const comment = (chalk as any).keyword('pink');
+
 export const info = chalk.green;
 
 export const warning = chalk.yellow;

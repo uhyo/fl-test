@@ -11,6 +11,7 @@ import {
     info,
     input,
 } from './log';
+import * as color from './color';
 
 const stdin = process.stdin;
 
@@ -70,7 +71,8 @@ export class Interface{
             return;
         }
         const inn = v.trim();
-        input(inn);
+        const [m, comment] = inn.split('\t');
+        input(m + (comment ? color.comment(` // ${comment}`) : ''));
         this.interpreter.write(inn + '\n');
         this.cursor++;
         setTimeout(()=>{
